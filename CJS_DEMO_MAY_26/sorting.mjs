@@ -1,4 +1,6 @@
-function insertionsort(arr) {
+//Default exports
+//Only one default export can be their, it is by default comes with aliases
+export default function insertionsort(arr) {
     for (let i = 1; i < arr.length; i++) {
       let currElement = arr[i];
       let j = i - 1;
@@ -10,7 +12,9 @@ function insertionsort(arr) {
     }
   }
   
-  function bubblesort(arr) {
+  //Named exports
+  // Can use aliases
+  export function bubblesort(arr) {
     let n = arr.length;
     // this function applied adjacent comparisons and immediate swaps with adjacent element
     for (let i = 0; i < n - 1; i++) {
@@ -29,7 +33,7 @@ function insertionsort(arr) {
     }
   }
   
-  module.exports = {
-    insertionsort,
-    bubblesort,
-  };
+//   module.exports = {
+//     insertionsort,
+//     bubblesort,
+//   };
