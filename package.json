@@ -9,7 +9,7 @@
   },
   "author": "Pratima",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
